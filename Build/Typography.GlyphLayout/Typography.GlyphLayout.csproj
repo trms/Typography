@@ -3,6 +3,15 @@
   <PropertyGroup>
     <TargetFrameworks>net452;netstandard2.0</TargetFrameworks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>trms</Authors>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/trms/Typography</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/trms/Typography</RepositoryUrl>
+    <PackageTags>fonts;typography</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>Pure C# Font Reader, Glyph Layout and Rendering.
+
+GlyphLayout font metrics library (part of LayoutFarm's Typography library)</Description>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -10,6 +19,13 @@
   </PropertyGroup>
 
   <Import Project="..\..\Typography.GlyphLayout\Typography.GlyphLayout.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Typography.OpenFont\Typography.OpenFont.csproj" />

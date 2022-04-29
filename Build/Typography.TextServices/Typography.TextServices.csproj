@@ -3,11 +3,27 @@
   <PropertyGroup>
     <TargetFrameworks>net452;netstandard2.0</TargetFrameworks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>trms</Authors>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/trms/Typography</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/trms/Typography</RepositoryUrl>
+    <PackageTags>fonts;typography</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>Pure C# Font Reader, Glyph Layout and Rendering.
+
+TextServices text rendering library (part of LayoutFarm's Typography library)</Description>
   </PropertyGroup>
 
   <Import Project="..\..\Typography.TextServices\Typography.TextServices.projitems" Label="Shared" />
 
   <Import Project="..\..\Typography.TextBreak\Typography.TextBreak\Typography.TextBreak.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Typography.GlyphLayout\Typography.GlyphLayout.csproj" />

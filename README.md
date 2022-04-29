@@ -4,6 +4,8 @@
 Pure C# Font Reader, Glyph Layout and Rendering.
 ---
 
+Forked from https://github.com/LayoutFarm/Typography and modified to make the library portions available as nuget packages.
+
 While developing the [PixelFarm Rendering library](https://github.com/PaintLab/PixelFarm),
 
 I figured that the way to render a glyph from a font may be useful for other libraries.

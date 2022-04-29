@@ -4,11 +4,27 @@
     <TargetFrameworks>net452;netstandard2.0</TargetFrameworks>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>trms</Authors>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/trms/Typography</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/trms/Typography</RepositoryUrl>
+    <PackageTags>fonts;typography</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>Pure C# Font Reader, Glyph Layout and Rendering.
+
+OpenFont font parsing library (part of LayoutFarm's Typography library)</Description>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DefineConstants>TRACE;DEBUG;NETSTANDARD1_6;NETSTANDARD1_6;NETSTANDARD1_3</DefineConstants>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
   
   <ItemGroup>
     <PackageReference Include="System.Numerics.Vectors" Version="4.5.0" />
